@@ -2,13 +2,13 @@ import React from 'react'
 import styled from "styled-components";
 
 const StyledHeading = styled.h2`
-  margin-top: 5em;
+  margin-top: 3em;
 `;
 
 const StyledTable = styled.table`
   font-family: "Roboto", Arial, Helvetica, sans-serif;
   border-collapse: collapse;
-  width: 80%;
+  min-width: 100%;
   margin: auto auto;
 
   td,
@@ -64,6 +64,8 @@ const StyledTable = styled.table`
 .delete {
   background-color: #f50057;
 }
+
+
 `
 
 const Table = ({curState, handleDispatchFn, handleEdit, editState}) => {
